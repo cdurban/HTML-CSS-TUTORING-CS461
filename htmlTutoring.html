@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!-- 
+    Name        : Chase Urban
+    Due Date    : Tuesday, September 1st 2020
+    Project     : CSS 461 | Project 1
+    File        : ./htmlTutoring.html
+    Description : This file fulfills the following project requirements:
+                    -HTML Tutoring Page
+                    -Quiz questions: 1 starting on line 36
+                                     2 starting on line 61
+                                     3 starting on line 81
+                                     4 starting on line 275
+                                     9 starting on line 185
+                                     10 starting on line 322
+                                     11 starting on line 355
+                    -Code Snippets and displays
+-->
+<html>
+    <head>
+        <title>Chase Urban Project 1 - HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+    </head>
+    <body>
+        <ul class="navigation">
+            <li><a href="./">Home</a></li>
+            <li><a href="./htmlTutoring.html">HTML Tutoring</a></li>
+            <li><a href="./cssTutoring.html">CSS Tutoring</a></li>
+            <li><a href="./game.html">Game</a></li>
+        </ul>
+        
+        <div class="content">           
+            <h1>HTML Tutoring</h1>
+            <div class="tutoringText">
+                <!-- This section answers question 1 from the quiz -->
+                <h2>-Welcome to HTML Tutoring!</h2>
+                <p>
+                    HTML, or <b>H</b>yper <b>T</b>ext <b>M</b>arkup 
+                    <b>L</b>anguage, is a markup language used to determine
+                    the structure of a web page. It is comprised of many
+                    <b>elements</b> that lay out the basic components of a web
+                    page. When used in tandem with 
+                    <a href="./cssTutoring.html"> CSS,</a> and possibly other 
+                    web programming languages, it can create a cohesive, well 
+                    designed web site.
+                </p>
+                
+                <h2>-Tags</h2>
+                <p>
+                    HTML is a language based on tags. Tags are elements of
+                    a page, visible or not, that help to build the structure
+                    of a web page. A tag is comprised of a <b>&lt;</b> symbol,
+                    the name of the <b>element</b>, and a <b>&gt;</b> symbol,
+                    looking like &lt;element&gt;. All tags must be closed, at
+                    some point as well, which is done using an almost 
+                    identical tag, however with a / included in the closing
+                    tag, looking like &lt;/element&gt;.
+                </p>
+                
+                <!-- This section answers question 2 from the quiz -->
+                <h2>-Basic Form of an HTML Document</h2>
+                <h3>&nbsp;&nbsp;--The Declaration Statement & HTML tag</h3>
+                <p>
+                    Any HTML document begins with a declaration statement, a
+                    statement declaring the type of document. A declaration 
+                    statement is a special type of tag that does not need to
+                    be closed.In an HTML page, the declaration statement 
+                    looks like this:
+                </p>
+                <h4>Declaration Statement & HTML Tag Example:</h4>
+                <div class="codeAndDisplay">
+                    <div class="singleTitle">
+                        Code:<br/>
+                    </div>
+                    <div class="singleCode"><code>
+                            &lt;!DOCTYPE HTML&gt;<br/>&lt;html&gt;
+                    </code></div>
+                </div><br/>
+                
+                <!-- This section answers question 3 from the quiz -->
+                <h3>&nbsp;&nbsp;--The Head Section</h3>
+                <p>
+                    The &lt;head&gt; tag indicates the head element, which is
+                    an element used to hold important, but mostly 
+                    non-directly-visible information about a web page. The
+                    four major types of elements usually placed in a head
+                    section are the &lt;title&gt;, &lt;meta&gt;, 
+                    &lt;style&gt;, and &lt;script&gt; elements.<br/><br/>
+                    -The &lt;title&gt; element dictates the title of the web
+                    page, which will be displayed in the name of the tab, 
+                    or on the title bar of the browser.<br/><br/>
+                    -The &lt;meta&gt; element dictates important, yet 
+                    invisible things about the web site, like the character
+                    set to name one example.<br/><br/>
+                    -The &lt;style&gt; element dictates a CSS stylesheet, 
+                    which will be talked about more on the 
+                    <a href=./cssTutoring.html>CSS Tutoring</a> page. One
+                    could also link an external CSS file using the &lt;link
+                    &gt; element.<br/><br/>
+                    -The &lt;script&gt; element dictates JavaScript code. 
+                    JavaScript is a language used to make a web page more
+                    interactive. You will learn more about this in the future.
+                </p>
+
+                <h4>
+                    Head Section Example (Not including &lt;style&gt;,
+                    &lt;link&gt;, or &lt;script&gt;:
+                </h4>
+                <div class="codeAndDisplay">
+                    <div class="cdTitle">
+                        Code:<br/>
+                    </div>
+                    <div class="cdTitle">
+                        Display:<br/>
+                    </div>
+
+                    <div class="code"><code>
+                        &lt;head&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;
+                            HTML Tutoring&lt;/title&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta 
+                            charset="UTF-8"&gt;<br/>
+                        &lt;/head&gt;
+                    </code></div>
+                    <div class="display">
+                        <img src="./title.png" width="100%" height="100%"> 
+                    </div>
+                </div><br/>
+                
+                <h2>-The Body Section</h2>
+                <p>
+                    The &lt;body&gt; element of an HTML document contains all
+                    parts of the web page visible to the viewer. Here are some
+                    tags that allow for the web page to have structure.
+                </p>
+                
+                <h3>&nbsp;&nbsp;--Headings & Paragraph Text</h3>
+                <p>
+                    In HTML, headings are different sized sub-titles for a
+                    page. They come in 6 sizes, 1 being the largest, and 6 
+                    being the smallest. The heading tag's syntax is as such:
+                    &lt;h(x)&gt;, where (x) is the size desired. <br/>-In
+                    comparison, paragraph text is implemented using the 
+                    &lt;p&gt; tag. Paragraph text is the default sized text.
+                </p>
+                
+                <h4>Headings Example:</h4>
+                <div class="codeAndDisplay">
+                    <div class="cdTitle">
+                        Code:<br/>
+                    </div>
+                    <div class="cdTitle">
+                        Display:<br/>
+                    </div>
+
+                    <div class="code"><code>
+                        &lt;h1&gt;Heading 1&lt;/h1&gt;<br/>
+                        &lt;h2&gt;Heading 2&lt;/h2&gt;<br/>
+                        &lt;h3&gt;Heading 3&lt;/h3&gt;<br/>
+                        &lt;h4&gt;Heading 4&lt;/h4&gt;<br/>
+                        &lt;h5&gt;Heading 5&lt;/h5&gt;<br/>
+                        &lt;h6&gt;Heading 6&lt;/h6&gt;<br/>
+                        &lt;p&gt;Normal text looks like
+                        this.&lt;/p&gt;<br/>
+                    </code></div>
+                    <div class="display">
+                        <div style="font-size:32px;font-weight:bolder;">
+                            Heading 1</div>
+                        <div style="font-size:24px;font-weight:bolder;">
+                            Heading 2</div>
+                        <div style="font-size:18.72px;font-weight:bolder;">
+                            Heading 3</div>
+                        <div style="font-size:16px;font-weight:bolder;">
+                            Heading 4</div>
+                        <div style="font-size:13.28px;font-weight:bolder;">
+                            Heading 5</div>
+                        <div style="font-size:10.72px;font-weight:bolder;">
+                            Heading 6</div>
+                        <div style="font-size:16px;">Normal text looks like 
+                            this.</div>
+                    </div>
+                </div><br/>
+                
+                <!-- This section answers question 9 from the quiz -->
+                <h3>&nbsp;&nbsp;--&lt;span&gt; and &lt;div&gt;</h3>
+                <p>
+                    In HTML, pages can be divided up in order to make styling
+                    much easier. To do this, we use the &lt;span&gt; and
+                    &lt;div&gt;elements. While we will talk more about this in
+                    <a href="./cssTutoring.html">CSS Tutoring</a>, you are
+                    able to name these &lt;span&gt;s and &lt;div&gt;s using
+                    the id property. This can be helpful, because as we will
+                    talk about later, you are able to link directly to 
+                    specific ids in a web page. &lt;span&gt;s and 
+                    &lt;div&gt;s act almost exactly the same, however a
+                    &lt;div&gt; will insert a new line before and after it,
+                    while a &lt;span&gt; will not.
+                </p>
+                
+                <h4>Example of the &lt;span&gt; and &lt;div&gt;:</h4>
+                <div class="codeAndDisplay">
+                    <div class="cdTitle">
+                        Code:<br/>
+                    </div>
+                    <div class="cdTitle">
+                        Display:<br/>
+                    </div>
+
+                    <div class="code"><code>
+                        &lt;span&gt;Hey! &lt;/span&gt;<br/>
+                        &lt;span&gt;Hello! &lt;/span&gt;<br/>
+                        &lt;div&gt;Hi! &lt;/div&gt;<br/>
+                        &lt;span id="namedSpan"&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Hi, my name is
+                        namedSpan! <br/>&lt;/span&gt;
+                    </code></div>
+                    <div class="display">
+                        <span>Hey! Hello!</span>
+                        <div>Hi!</div>
+                        <span id="namedSpan">Hi, my name is namedSpan!</span>
+                    </div>
+                </div><br/>
+                
+                <h3>&nbsp;&nbsp;--Lists, &lt;ol&gt; and &lt;ul&gt;</h3>
+                <p>
+                    Another important element of web pages are lists, which
+                    HTML allows for both ordered and unordered versions. Both
+                    types of lists are begun by either an opening &lt;ol&gt;,
+                    for an ordered list, or &lt;ul&gt; for an unordered list.
+                    Then, all <b>l</b>ist <b>i</b>tems are surrounded by a 
+                    set &lt;li&gt; and &lt;/li&gt; tags. Finally, the list is 
+                    ended with a &lt;/ol&gt; or &lt;/ul&gt; tag.
+                </p>
+                
+                <h4>Example of &lt;ol&gt; and &lt;ul&gt;:</h4>
+                <div class="codeAndDisplay">
+                    <div class="cdTitle">
+                        Code:<br/>
+                    </div>
+                    <div class="cdTitle">
+                        Display:<br/>
+                    </div>
+
+                    <div class="code"><code>
+                        Best Three Numbers:<br/>
+                        &lt;ol&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;6&lt;/li&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;4&lt;/li&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;9&lt;/li&gt;<br/>
+                        <br/>Honorable Mentions:<br/>
+                        &lt;/ol&gt;<br/>
+                        &lt;ul&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;2&lt;/li&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;7&lt;/li&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;0&lt;/li&gt;<br/>
+                        &lt;/ul&gt;<br/>
+                    </code></div>
+                    <div class="display">
+                        Best Three Numbers:
+                        <ol>
+                            <li>6</li>
+                            <li>4</li>
+                            <li>9</li>
+                        </ol>
+                        Honorable Mentions:
+                        <ul>
+                            <li>2</li>
+                            <li>7</li>
+                            <li>0</li>
+                        </ul>
+                    </div>
+                </div><br/>
+                
+                <!-- This section answers question 4 from the quiz -->
+                <h3>&nbsp;&nbsp;--Links</h3>
+                <p>
+                    In HTML, pages and files can be
+                    attached using <b>hyperlinks</b>, or <b>links</b>. Pages
+                    and files can be linked using the anchor tag, &lt;a&gt;.
+                    Tags can have certain <b>properties</b>, and in the case
+                    of the anchor tag, the <b>H</b>ypertext <b>REF</b>erence,
+                    or <b>href</b> property determines the link or file that
+                    the anchor tag links to. The text or other HTML element 
+                    to act as the clickable link is placed within the anchor 
+                    tag. The syntax of the anchor tag is as such:<br/>
+                    &nbsp;&nbsp;&lt;a href="https://www.example.com"&gt; 
+                    Link Text &lt;/a&gt;<br/>
+                    You can also use &lt;a&gt; tags to link to direct places
+                    within web pages, using the id name you provide to each
+                    item in place of a url, which looks like this:<br/>
+                    &nbsp;&nbsp;&lt;a href="#idName"&gt; 
+                    Link Text &lt;/a&gt;<br/>
+                </p>
+                
+                <h4>Example of the Anchor Tag:</h4>
+                <div class="codeAndDisplay">
+                    <div class="cdTitle">
+                        Code:<br/>
+                    </div>
+                    <div class="cdTitle">
+                        Display:<br/>
+                    </div>
+
+                    <div class="code"><code>
+                        &lt;a href="https://www.chaseurban.me"&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Click here to go to my
+                        website!<br/>&lt;/a&gt;<br/>&lt;a
+                        href="#namedSpan"&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Click to go to the 
+                        named &amp;lt;span&amp;gt;.<br/>&lt;/a&gt;
+                    </code></div>
+                    <div class="display">
+                        <a href="https://www.chaseurban.me">
+                            Click here to go to my website!
+                        </a>
+                        <a href="#namedSpan">Click to go to the named 
+                            &lt;span&gt;</a>
+                    </div>
+                </div><br/>
+                
+                <!-- This section answers question 10 from the quiz -->
+                <h3>&nbsp;&nbsp;--Images</h3>
+                <p>
+                    In HTML, images can be inserted into web sites using the 
+                    &lt;img&gt; tag. Much like the anchor tag, the image tag
+                    needs set properties to function properly. The two most 
+                    important properties to set are the <b>S</b>ou<b>rc</b>e,
+                    or <b>src</b>; and the <b>Alt</b>ernate Text Property, 
+                    or <b>alt</b>.<br/>-The <b>src</b> is the location the 
+                    picture can be located at, be it an online address, or 
+                    a local relative address.<br/> -The <b>alt</b> is the 
+                    text that will appear when the image is unable to load.
+                </p>
+                <h4>Example:</h4>
+                <div class="codeAndDisplay">
+                    <div class="cdTitle">
+                        Code:<br/>
+                    </div>
+                    <div class="cdTitle">
+                        Display:<br/>
+                    </div>
+
+                    <div class="code"><code>
+                            &lt;img src="./logo.png" alt="HTML 5 Logo"/&gt;
+                            <br/>&lt;img src="bad.website.com" alt="oops"/&gt;
+                    </code></div>
+                    <div class="display">
+                        <img src="./logo.png" alt="HTML 5 Logo" height="100"
+                             width="100"><br/>
+                        <img src="bad.website.com" alt="oops">
+                    </div>
+                </div><br/>
+                
+                <!-- This section answers question 11 from the quiz -->
+                <h2>-Review Example:</h2>
+                <div class="codeAndDisplay">
+                    <div class="cdTitle">
+                        Code:<br/>
+                    </div>
+                    <div class="cdTitle">
+                        Display:<br/>
+                    </div>
+                    <div class="code"><code>
+                        &lt;!DOCTYPE HTML&gt;<br/>
+                        &lt;html&gt;<br/>
+                        &nbsp;&nbsp;&lt;head&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Classes I
+                        Teach This Semester&lt;/title&gt;<br/>
+                        &nbsp;&nbsp;&lt;/head&gt;<br/>
+                        &nbsp;&nbsp;&lt;body&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Computer Science<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Internet Programming&lt;/li&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Advanced Java&lt;/li&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Mathematics<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Calculus I&lt;/li&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Differential Equations&lt;/li&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br/>
+                        &nbsp;&nbsp;&lt;/body&gt;<br/>
+                        &lt;/html&gt;<br/>
+                    </code></div>
+                    <div class="display">
+                        <ol>
+                            <li>Computer Science
+                                <ul>
+                                    <li>Internet Programming</li>
+                                    <li>Advanced Java</li>
+                                </ul>
+                            </li>
+                            <li>Mathematics
+                                <ul>
+                                    <li>Calculus I</li>
+                                    <li>Differential Equations</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div> <!--end div display-->
+                </div> <!--end div codeAndDisplay--> <br/>
+            </div> <!--end div tutoringText-->
+        </div> <!--end div content-->
+    </body>
+</html>

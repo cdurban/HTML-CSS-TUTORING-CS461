@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- 
+    Name        : Chase Urban
+    Due Date    : Tuesday, September 1st 2020
+    Project     : CSS 461 | Project 1
+    File        : ./game.html
+    Description : This is the random number game for Project 1
+-->
+<html>
+    <head>
+        <title>Chase Urban Project 1 - Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./main.css">
+    </head>
+    <body>
+        <ul class="navigation">
+            <li><a href="./">Home</a></li>
+            <li><a href="./htmlTutoring.html">HTML Tutoring</a></li>
+            <li><a href="./cssTutoring.html">CSS Tutoring</a></li>
+            <li><a href="./game.html">Game</a></li>
+        </ul>
+        
+        <div class="content">
+        <h1>Random Number Game</h1><br/><br/><br/>
+        <h2>Enter a number from 0 to 999. 
+            If your number is picked, you win $249.00!</h2><br/><br/>
+        <div><b>$1.00 to play.</b>&Tab;&Tab;Wallet balance:
+            $<span id="balance">250.00</span></div>
+        <br/><br/>
+        <form action="#">
+            <input class="button" id="playButton" type="button"
+                   value="Play Game ($1.00)"/>
+        </form>
+        <br/>
+        <div id ="results"></div>
+        <script type="text/javascript">
+            
+            var resultsLabel = document.getElementById("results");
+            
+            var balanceLabel = document.getElementById("balance");
+            var wallet = 250;
+            
+            var gameButton = document.getElementById("playButton");
+            gameButton.addEventListener("click", playGame, false);
+            
+            function playGame(){           
+                if(wallet >= 1){
+                    var randNum;
+                    var numSt;
+                    var num;
+
+                    randNum = Math.floor(Math.random() * 1000);
+
+                    numSt = window.prompt("Please enter an integer where 0" +
+                        "<= number < 1000");
+                    num = parseInt(numSt);
+                    while(!(0 <= num && num <1000)){
+                        numSt = window.prompt("Number not 0 <= number < 1000."
+                                + "\nEnter an integer 0 <= number < 1000.");
+                        num = parseInt(numSt);
+                    }
+
+                    if(num === randNum){
+                        resultsLabel.innerHTML = "<h3>Random number was&nbsp;&nbsp;<span style = 'font-size: 20pt;'>" + 
+                            randNum + "</span>! Congrats, you won!</h3>";
+                        wallet += 249;
+                    }
+                    else{
+                        resultsLabel.innerHTML = "<h3>Number chosen is&nbsp;&nbsp;<span style = 'font-size: 20pt;'>" + 
+                            num + "</span>. <br/>Random Number is&nbsp;&nbsp;<span style = 'font-size: 20pt;'>" + randNum + 
+                            "</span>. </br>Difference is &nbsp;&nbsp;<span style = 'font-size: 20pt;'>" + (Math.abs(randNum-num)) + 
+                            ".</span> </br></br>You lose.</h3>";
+                        wallet--;
+                    }
+                    balanceLabel.innerHTML = wallet + ".00";
+                }
+                else
+                    window.alert("All out of money.\nGame Over!");
+            }
+        </script>
+        </div>
+    </body>
+</html>

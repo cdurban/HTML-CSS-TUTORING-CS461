@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!-- 
+    Name        : Chase Urban
+    Due Date    : Tuesday, September 1st 2020
+    Project     : CSS 461 | Project 1
+    File        : ./cssTutoring.html
+    Description : This file fulfills the following project requirements:
+                    -HTML Tutoring Page
+                    -Quiz questions: 5 starting on line 38
+                                     6 starting on line 56
+                                     7 starting on line 56
+                                     8 starting on line 200
+                                     grouped css starting on line 161
+                                     context-dependent starting on line 161
+                                     font-properties starting on line 99
+                                     text-properties starting on line 128
+                                     psuedo-classes starting on line 161
+                    -Code Snippets and displays
+-->
+<html>
+    <head>
+        <title>Chase Urban Project 1 - CSS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./main.css"/>
+    </head>
+    <body>
+        <ul class="navigation">
+            <li><a href="./">Home</a></li>
+            <li><a href="./htmlTutoring.html">HTML Tutoring</a></li>
+            <li><a href="./cssTutoring.html">CSS Tutoring</a></li>
+            <li><a href="./game.html">Game</a></li>
+        </ul>
+        
+        <div class="content">           
+            <h1>CSS Tutoring</h1><br/>
+            <div class="tutoringText">
+                <!-- This section answers question 5 from the quiz -->
+                <h2>-Welcome to CSS Tutoring!</h2>
+                <p>
+                    CSS, or <b>C</b>ascading <b>S</b>tyle <b>S</b>heets is a
+                    language used in conjunction with HTML to create well
+                    designed web sites. While HTML determines the structure
+                    and layout of a web page, CSS determines the style, and
+                    mastering CSS will enable you to create beautiful web
+                    sites.
+                </p>
+                
+                <h2>-Selectors and Properties</h2>
+                <p>
+                    CSS relies on the idea of <b>selectors</b> and 
+                    <b>properties.</b> A selector is a category of HTML code
+                    to be stylized in a certain way. Properties are the
+                    values you set to style the elements of certain selectors.
+                </p>
+                <!-- This section answers question 6 and 7 from the quiz -->
+                <h3>&nbsp;&nbsp;--Types of Selectors</h3>
+                <p>
+                    --There are multiple types of selectors, which allow a more
+                    fine-tuned styling of a web site: <br/> -The highest level
+                    of  selector is the <b>HTML selector</b>. The HTML selector
+                    is  used to define styles that will apply to all instances 
+                    of a specific HTML tag. It is declared using only the name 
+                    of the HTML element.<br/>-Next is the <b>class
+                    selector</b>. The class selector is used to define a class 
+                    of elements, which can be used to style any one or multiple
+                    html tags. It is declared using a period (<b>.</b>), along 
+                    with the name of the desired class.<br/>-Next is the <b>id
+                    selector</b>, which is used to define an id, for use on 
+                    only one element. You may recall id from internal linking,
+                    as an id can only be used on one element so that internal 
+                    linking may work properly. It is declared using a pound
+                    sign (<b>#</b>).<br/>-The syntax of all CSS statements is
+                    <b>selector{property:value;}</b>.
+                </p>
+                <h4>Selectors Example:</h4>
+                <div class="codeAndDisplay">
+                    <div class="singleTitle">
+                        Code:<br/>
+                    </div>
+                    <div class="singleCode"><code>
+                        &lt;!--HTML Selector--&gt;<br/>
+                        body{<br/>&nbsp;&nbsp;&nbsp;&nbsp;property: value;
+                            <br/>}<br/>
+                        <br/>&lt;!--class Selector--&gt;<br/>
+                        .className{<br/>&nbsp;&nbsp;&nbsp;&nbsp;property: value;
+                            <br/>}<br/>
+                        <br/>&lt;!--id Selector--&gt;<br/>
+                        #idName{<br/>&nbsp;&nbsp;&nbsp;&nbsp;property: value;
+                            <br/>}<br/>
+                    </code></div>
+                </div><br/>
+                
+                <h3>&nbsp;&nbsp;--Properties</h3>
+                <p>
+                    In CSS, a selector is modified by adding <b>properties</b>.
+                    Every property has a set of one or more <b>values</b>.
+                </p>
+                <!-- This section covers font properties -->
+                <h4>Example of Font Properties:</h4>
+                <div class="codeAndDisplay">
+                    <div class="singleTitle">
+                        font-family:
+                    </div>
+                    <div class="singleDisplay" style='flex-flow:row wrap;'>
+                        <span style='font-family:Arial;'>Arial,&nbsp;</span>
+                        <span style='font-family:Impact;'>Impact,&nbsp;</span>
+                        <span style='font-family:Tahoma;'>Tahoma,&nbsp;</span>
+                        <span style='font-family:Verdana;'>Verdana...</span>
+                    </div>
+                    <div class="singleTitle">
+                        font-style:
+                    </div>
+                    <div class="singleDisplay" style='flex-flow:row wrap;'>
+                        <span style='font-style:normal;'>normal,&nbsp;</span>
+                        <span style='font-style:italic;'>italic,&nbsp;</span>
+                        <span style='font-style:oblique;'>oblique...</span>
+                    </div>
+                    <div class="singleTitle">
+                        font-size:
+                    </div>
+                    <div class="singleDisplay" style='flex-flow:row wrap;'>
+                        <span style='font-size:20px;'>20px,&nbsp;</span>
+                        <span style='font-size:20pt;'>20pt,&nbsp;</span>
+                        <span style='font-size:0.25in;'>0.25in...</span>
+                    </div>
+                </div><br/>
+                <!-- This section covers text properties -->
+                <h4>Example of Text Properties:</h4>
+                <div class="codeAndDisplay">
+                    <div class="singleTitle">
+                        line-height:
+                    </div>
+                    <div class="singleDisplay">
+                        normal, number, percentage...
+                    </div>
+                    <div class="singleTitle">
+                        text-decoration:
+                    </div>
+                    <div class="singleDisplay">
+                        underline, overline, line-though...
+                    </div>
+                    <div class="singleTitle">
+                        text-align:
+                    </div>
+                    <div class="singleDisplay">
+                        left, right, center, justify
+                    </div>
+                    <div class="singleTitle">
+                        text-indent:
+                    </div>
+                    <div class="singleDisplay">
+                        length, percentage
+                    </div>
+                    <div class="singleTitle">
+                        white-space:
+                    </div>
+                    <div class="singleDisplay">
+                        normal, pre
+                    </div>
+                </div><br/>
+                
+                <!-- This section covers group selectors, context-dependent
+                selectors, psuedo-classes -->
+                <h3>&nbsp;&nbsp;--Advanced Selectors</h3>
+                <p>
+                    -Additionally, you are able to<b>group selectors</b> of any
+                    type, using commas (<b>,</b>) in between each selector. 
+                    This may allow you to apply a base style across many 
+                    different selectors.<br/>-Also, you are able to use what 
+                    are called <b>context-dependent selectors</b>, selectors 
+                    that are only used when a certain number of tags are nested
+                    inside of each other. Context-dependent selectors are 
+                    declared by using multiple selectors with spaces in 
+                    between.<br/>-Also, within CSS there exist 
+                    <b>psuedo-classes</b> of selectors. A psuedo-class is a 
+                    special type of selector that is only used when a specific
+                    condition is met. For example, a style that activates on
+                    hover. A psuedo-class is declared with a colon (:) between
+                    the selector and the psuedo-class identifier.
+                </p>
+                <h4>Example:</h4>
+                <div class="codeAndDisplay">
+                    <div class="singleTitle">
+                        Code:<br/>
+                    </div>
+                    <div class="singleCode"><code>
+                        &lt;!--Group Selector--&gt;<br/>
+                        h1, h2, h3, h4, h5, h6{
+                        <br/>&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br/>}
+                        <br/><br/>&lt;!--Context-Dependent Selector--&gt;<br/>
+                        b i{<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 16pt;<br/>}
+                        <br/><br/>&lt;!--Psuedo-Class--&gt;<br/>
+                        a:hover{<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-family:
+                        Impact;<br/>}
+                    </code></div>
+                </div><br/>
+                
+                
+                <!-- This section answers question 8 from the quiz -->
+                <h2>-Where CSS code is placed</h2>
+                <p>
+                    CSS code can be implemented in one of three ways:
+                </p>
+                
+                
+                <h3>&nbsp;&nbsp;--Inline CSS</h3>
+                <p>
+                    Inline CSS is inserted directly into the tag of the element
+                    you wish to style. It is good for when this is the 
+                    <b>only</b> instance of an element you wish to use across 
+                    an entire web site. To implement, you use the 'style' 
+                    variable in the tag declaration, as such:
+                </p>
+                <h4>Inline CSS Example:</h4>
+                <div class="codeAndDisplay">
+                    <div class="singleTitle">
+                        Code:
+                    </div>
+                    <div class="singleCode"><code>
+                        &lt;p style="property: value;"&gt;text&lt;/p&gt;
+                    </code></div>
+                </div><br/>
+                
+                <h3>&nbsp;&nbsp;--Embedded CSS</h3>
+                <p>
+                    Embedded CSS is inserted directly into the head section of 
+                    the HTML document. It is useful for when a style needs to
+                    be used across one web page, but not across other pages
+                    within the web site. It is inserted into a &lt;style&gt; 
+                    element, in the &lt;head&gt; element, like this:
+                </p>
+                <h4>Embedded CSS Example:</h4>
+                <div class="codeAndDisplay">
+                    <div class="singleTitle">
+                        Code:<br/>
+                    </div>
+                    <div class="singleCode"><code>
+                        &lt;head&gt;<br/>
+                        &nbsp;&nbsp;&lt;style&gt;<br/> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;selector{<br/> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        property:value;<br/> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/> 
+                        &nbsp;&nbsp;&lt;/style&gt;<br/>
+                        &lt;/head&gt;<br/>
+                    </code></div>
+                </div><br/>
+                
+                
+                <h3>&nbsp;&nbsp;--External CSS</h3>
+                <p>
+                    External CSS is inserted into an external .css file, as the
+                    name 'external css' would imply. It is useful for when you
+                    need to reuse a style or set of classes and ids across
+                    multiple web pages on a web site. It si linked using a 
+                    &lt;link&gt; element, like this:
+                </p>
+                <h4>External CSS Example:</h4>
+                <div class="codeAndDisplay">
+                    <div class="singleTitle">
+                        Code:<br/>
+                    </div>
+                    <div class="singleCode"><code>
+                        ---------------index.html---------------<br/>
+                        &lt;link rel="stylesheet" type="text/css"
+                        href="./main.css"/&gt;<br/><br/>
+                        ---------------main.css---------------<br/>
+                        selector{<br/>&nbsp;&nbsp;property:value;<br/>}<br/> 
+                    </code></div>
+                </div><br/>
+            </div> <!--end div tutoringText-->
+        </div> <!--end div content-->
+    </body>
+</html>

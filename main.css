@@ -1,0 +1,154 @@
+/*
+    Name        : Chase Urban
+    Due Date    : Tuesday, September 1st 2020
+    Project     : Project 1
+    File        : ./main.css
+    Description : This is the css style file for Project 1.
+*/
+body{
+    background-color: #dedede;
+    font-family: Trebuchet MS;
+    color: #006699;
+}
+
+h1{
+    font-size: 32pt;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 8px 10px;
+}
+
+a:link{
+    color: steelblue;
+}
+
+a:visited{
+    color: slategray;
+}
+
+.navigation{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: -8px;
+    
+    list-style: none;
+    background:darkturquoise;
+}
+
+.navigation a{
+    float:left;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+.navigation a:link{
+    color: white;
+}
+
+.navigation a:visited{
+    color: white;
+}
+
+.navigation a:hover{
+    background: steelblue;
+}
+
+.content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    max-width:  40%;
+    max-width: 850px;
+    min-width: 600px;
+    min-height: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.tutoringText{
+    text-align: left;
+}
+
+.codeAndDisplay{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    text-align:left;
+    border: 3px solid black;
+}
+
+.cdTitle{
+    display:flex;
+    min-width:46%;
+    max-width:46%;
+    margin:2px;
+}
+
+.code{
+    display:flex;
+    min-width:47.5%;
+    max-width:49%;
+    margin:2px;
+    background-color: lightgray;
+    border: 2px solid black;
+}
+
+.display{
+    display:flex;
+    flex-flow:column;
+    min-width:47.5%;
+    max-width:49%;
+    margin:2px;
+    background-color:white;
+    border: 2px solid black;
+}
+
+.singleTitle{
+    display:flex;
+    min-width:26%;
+    max-width:26%;
+    margin:2px;
+}
+
+.singleCode{
+    display:flex;
+    min-width:67.5%;
+    max-width:69%;
+    margin:2px;
+    background-color: lightgray;
+    border: 2px solid black;
+}
+
+.singleDisplay{
+    display:flex;
+    flex-flow:column;
+    min-width:67.5%;
+    max-width:69%;
+    margin:2px;
+    background-color:white;
+    border: 2px solid black;
+}
+
+#playButton{
+    background-color: darkturquoise;
+    font-size: 18px;
+    color: white;
+    padding: 25px 20px;
+    border-radius: 15px;
+    border: 2px solid white;
+    cursor:pointer;
+    outline:none;
+}
+
+.button:hover{
+    background-color:red;
+}
