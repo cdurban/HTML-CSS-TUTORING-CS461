@@ -1,1 +1,2 @@
 # HTML-CSS-TUTORING-CS461
+This is my solution to compsic 461 Project One. The goal of this project was to create a tutoring website for HTML and CSS, explaining some basic concepts, such as how to create a basic HTML website, and how to begin to use basic CSS to style that webpage. In addition, this website contains a bonus page containing a simple number guessing game programmed in JavaScript. This was my first time using JavaScript, so it may not look the greatest.
